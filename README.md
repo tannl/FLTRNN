@@ -1,8 +1,8 @@
 # FLTRNNL
 
 ### 运行
-在behavior_cloning目录下执行以运行程序
-`sh scripts/inference.sh`
+在behavior_cloning目录下执行`sh scripts/inference.sh`以运行程序
+
 
 control flags:
 ```
