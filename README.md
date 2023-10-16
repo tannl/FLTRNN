@@ -6,6 +6,7 @@
 
 跟GPT相关的交互接口文件`gpt_policy.py`
 主流程函数 `interactive_interface_fn`
+
 control flags:
 ```
 if_gpt = False   # 是否使用gpt交互接口来执行任务规划
