@@ -1,35 +1,33 @@
-# FLTRNNL
+# FLTRNN:Faithful Long-Horizon Task Planning for Robotics with Large Language Models
 
-### 环境依赖
-实验环境为virtualhome，本实验的virtualhome版本为2.2.5
-virtualhome的安装与配置可以参考官方文档：
+### Environment Dependency
+The experimental environment is virtualhome, and the virtualhome version of our experiment is 2.2.5. For the installation and configuration of virtualhome, please refer to the official documentation:
 http://virtual-home.org/tools/explore.html
-
 https://github.com/xavierpuigf/virtualhome
 
 
-### 运行
-在behavior_cloning目录下执行`sh scripts/inference.sh`以运行程序
+### Run
+Run the program by executing `sh scripts/inference.sh` in the behavior_cloning directory.
 
 
-control flags:
+### control flags:
 ```
-if_gpt = True   # 是否使用gpt交互接口来执行任务规划
-if_exe_all_action = True  #是否生成结束后再执行完整规划，相对应的是边生成边执行
+if_gpt = True   # use the gpt api to perform task planning
+if_exe_all_action = True  #execute the complete plan after the generation is completed, or to execute while generating.
 ```
 
-执行之前需要在gpt_policy.py中添加自己的api-key
+Before execution, you need to add your own api-key in gpt_policy.py
 ```
 api_key = [api-key1, api-key2]
 api_key_num = 2
 ```
 
-### 相关代码目录
+### Related code directory
 ```
-inference.sh    存储一些控制参数
-gpt_policy.py   跟GPT相关的交互接口文件
-interactive_interface_fn   主流程函数
-/checkpoint/LID-Text/interactive_eval  存储运行结果的log文件
+inference.sh： some control parameters
+gpt_policy.py： Interaction interface files related to GPT
+interactive_interface_fn： main process function
+/checkpoint/LID-Text/interactive_eval： log files
 
 
 ```
